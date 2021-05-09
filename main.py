@@ -21,7 +21,7 @@ def download():
     with open(CSV, newline='') as csv_file:
         count = START
         for row in csv.reader(csv_file):
-            time.sleep(1)
+            time.sleep(5)
             count += 1
             url = row[0]
             download_image(url, PATH.format(str(count)))
